@@ -1,0 +1,23 @@
+[project]
+name = "phantomflow"
+version = "0.1.0"
+description = "There’s a new ghost in town!"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { file = "LICENSE" }
+dependencies = []
+authors = [{ name = "Nitish", email = "nitishrn1993@example.com" }]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/phantomflow"]
+
+[project.urls]
+Homepage = "https://github.com/makdinet/phantomflow"
+Issues = "https://github.com/makdinet/phantomflow/issues"
+
+[project.scripts]
+phantomflow-cli = "phantomflow.cli:main"
